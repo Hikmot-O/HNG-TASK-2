@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import playBtn from "../assets//icons/playBtn.svg";
-import Star from "../assets//icons/Star.svg";
-import ExpandArrow from "../assets//icons/ExpandArrow.svg";
+import playBtn from "../assets/icons/playBtn.svg";
+import Star from "../assets/icons/Star.svg";
+import ExpandArrow from "../assets/icons/ExpandArrow.svg";
 import axios from "axios";
 
 const API_Read_Access_Token = import.meta.env.VITE_API_Read_Access_Token;
