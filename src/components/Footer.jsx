@@ -4,7 +4,7 @@ import instagram from "../assets/icons/instagram.svg";
 import twitter from "../assets/icons/twitter.svg";
 import youtube from "../assets/icons/youtube.svg";
 
-const footer = () => {
+const Footer = () => {
   return (
     <section className="px-5 pt-[147px] pb-[74px] font-bold text-sm md:text-lg flex flex-col items-center">
       <div className="flex items-center gap-12">
@@ -23,4 +23,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
