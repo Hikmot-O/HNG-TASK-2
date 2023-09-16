@@ -1,5 +1,4 @@
-# React + Vite
-HNGX Stage 2 Frontend Task
+# HNGX Stage 2 Frontend Task
 
 # STACKS
 1. REACT
