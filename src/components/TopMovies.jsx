@@ -19,8 +19,8 @@ const TopMovies = () => {
       accept: "application/json",
       Authorization: `Bearer ${API_Read_Access_Token}`,
     };
+    setIsLoading(true);
     try {
-      setIsLoading(true);
       const response = axios.get(
         `https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1&api_key=${API_Key}`,
         { headers }

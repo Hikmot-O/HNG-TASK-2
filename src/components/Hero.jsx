@@ -25,8 +25,7 @@ const Hero = () => {
     };
     try {
       const response = axios.get(
-        `https://api.themoviedb.org/3/search/movie?query=${searchQuery}&api_key=${API_Key}&include_adult=false&language=en-US&page=1`,
-        { headers }
+        `https://api.themoviedb.org/3/search/movie?query=${searchQuery}&api_key=${API_Key}&include_adult=false&language=en-US&page=1`, headers
       );
       const data = (await response).data;
       if (searchQuery === "") return;
@@ -72,7 +71,9 @@ const Hero = () => {
           <img className="absolute right-2.5" src={search} alt="Search Svg" />
         </form>
         <div className="text-white flex items-center gap-7">
-          <a className="text-sm md:text-base" href="">Sign in</a>
+          <a className="text-sm md:text-base" href="">
+            Sign in
+          </a>
           <img src={menu} alt="Menu-bar Svg" />
         </div>
       </div>
