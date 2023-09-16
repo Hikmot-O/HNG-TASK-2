@@ -13,7 +13,7 @@ const API_Key = import.meta.env.VITE_API_KEY;
 
 const TopMovies = () => {
   const [topTenMovies, setTopTenMovies] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const fetchTopMovies = async () => {
     const headers = {
       accept: "application/json",
@@ -37,10 +37,10 @@ const TopMovies = () => {
     }
   };
 
-  useEffect(() => {
-    setIsLoading(false)
+  useEffect( () => {
+    setIsLoading(true);
     fetchTopMovies();
-    setIsLoading(true)
+    setIsLoading(false);
   }, []);
 
   return (
