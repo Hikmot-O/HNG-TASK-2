@@ -8,10 +8,10 @@ import Favorite from "../assets/icons/Favorite.svg";
 // flex flex-wrap flex-row gap-[calc((100vw-1192px)/3)]
 // https://image.tmdb.org/t/p/w500/tmU7GeKVybMWFButWEGl2M4GeiP.jpg
 
-const API_Read_Access_Token = import.meta.env.VITE_API_Read_Access_Token;
-const API_Key = import.meta.env.VITE_API_KEY;
-// const API_Key='d621dfcc13fc45bdde4b0f2b76515c9d'
-// const API_Read_Access_Token='eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkNjIxZGZjYzEzZmM0NWJkZGU0YjBmMmI3NjUxNWM5ZCIsInN1YiI6IjY1MDE1MTc1NmEyMjI3MDBmZDIwYjQ2MiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.YIc6T2B_Ft0u24gFaMgg0ZROW26qFJURr6Hh37VTlcY'
+// const API_Read_Access_Token = import.meta.env.VITE_API_Read_Access_Token;
+// const API_Key = import.meta.env.VITE_API_KEY;
+const API_Key='d621dfcc13fc45bdde4b0f2b76515c9d'
+const API_Read_Access_Token='eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkNjIxZGZjYzEzZmM0NWJkZGU0YjBmMmI3NjUxNWM5ZCIsInN1YiI6IjY1MDE1MTc1NmEyMjI3MDBmZDIwYjQ2MiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.YIc6T2B_Ft0u24gFaMgg0ZROW26qFJURr6Hh37VTlcY'
 
 const TopMovies = () => {
   const [topTenMovies, setTopTenMovies] = useState([]);
