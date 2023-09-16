@@ -6,14 +6,14 @@ import youtube from "../assets/icons/youtube.svg";
 
 const footer = () => {
   return (
-    <section className="pt-[147px] pb-[74px] font-bold text-lg flex flex-col items-center">
+    <section className="px-5 pt-[147px] pb-[74px] font-bold text-sm md:text-lg flex flex-col items-center">
       <div className="flex items-center gap-12">
         <img src={facebook} alt="Facebook Svg" />
         <img src={instagram} alt="Instagram Svg" />
         <img src={twitter} alt="Twitter Svg" />
         <img src={youtube} alt="Youtube Svg" />
       </div>
-      <div className="my-9 flex items-center gap-12  text-[#111827]">
+      <div className="my-9 md:flex items-center gap-12  text-[#111827]">
         <p>Conditions of Use</p>
         <p>Privacy & Policy</p>
         <p>Press Room</p>

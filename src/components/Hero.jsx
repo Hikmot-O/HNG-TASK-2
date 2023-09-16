@@ -55,7 +55,7 @@ const Hero = () => {
     >
       {/* header */}
       <div className=" flex items-center justify-between">
-        <div className="">
+        <div className="w-[120px] md:w-auto">
           <img src={logo} alt="Logo" />
         </div>
         {/* <form action=""></form> */}
@@ -72,7 +72,7 @@ const Hero = () => {
           <img className="absolute right-2.5" src={search} alt="Search Svg" />
         </form>
         <div className="text-white flex items-center gap-7">
-          <a href="">Sign in</a>
+          <a className="text-sm md:text-base" href="">Sign in</a>
           <img src={menu} alt="Menu-bar Svg" />
         </div>
       </div>
@@ -80,18 +80,18 @@ const Hero = () => {
       <form
         //   action="submit"
         onSubmit={searchInputHandler}
-        className="mx-auto w-max relative flex lg:hidden items-center self-center"
+        className="mt-5 mx-auto w-[100%] relative flex lg:hidden items-center self-center"
       >
         <input
           type="text"
           placeholder="What do you want to watch?"
-          className="outline-none text-white text-base w-[525px] placeholder-white border-2 border-[#D1D5DB] bg-transparent rounded-md px-2.5 py-1.5"
+          className="outline-none text-white text-base w-[100%] placeholder-white border-2 border-[#D1D5DB] bg-transparent rounded-md px-2.5 py-1.5"
         />
         <img className="absolute right-2.5" src={search} alt="Search Svg" />
       </form>
 
-      <div className="text-white mt-[93px] w-[400px]">
-        <h1 className="text-white font-bold text-5xl ">
+      <div className="text-white mt-[93px] md:w-[400px]">
+        <h1 className="text-white font-bold text-4xl md:text-5xl ">
           John Wick 3 : Parabellum
         </h1>
         <div className="text-xs my-4 flex items-center gap-[34px]">

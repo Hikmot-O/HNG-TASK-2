@@ -42,22 +42,22 @@ const MovieDetails = () => {
   }, [ID]);
 
   return (
-    <section className="pt-[38px] pl-10 pr-[50px]">
+    <section className="py-[38px] px-5 md:px-12">
       <div
         style={{
           background: `url(http://image.tmdb.org/t/p/w1280/${movieData.backdrop_path})`,
         }}
-        className="bg-cover mb-8 pt-[132px] flex flex-col items-center h-[450px]  rounded-[20px]"
+        className="bg-cover mb-8 pt-[132px] bg-slate-300 flex flex-col items-center h-[450px] rounded-[20px]"
       >
-        <div className="cursor-pointer flex items-center justify-center w-[110px] h-[110px] rounded-full  bg-white bg-opacity-[0.35]">
-          <img src={playBtn} alt="Play Svg" />
+        <div className="cursor-pointer flex items-center justify-center w-[110px] h-[110px] rounded-full bg-white bg-opacity-[0.35]">
+          <img className="" src={playBtn} alt="Play Svg" />
         </div>
-        <p className="mt-2 font-[500] text-2xl text-[#e8e8e8]">Watch Trailer</p>
+        <p className="mt-2 font-[500] text-lg md:text-2xl text-[#e8e8e8]">Watch Trailer</p>
       </div>
 
-      <div className="mb-6 md:flex items-center justify-between">
-        <div className="md:flex items-center gap-4">
-          <div className="gap-1.5 md:gap-3 flex items-center text-[#404040] md:text-2xl">
+      <div className="mb-6 xl:flex items-center justify-between">
+        <div className="xl:flex items-center gap-4">
+          <div className="gap-1.5 md:gap-3 sm:flex items-center text-[#404040] lg:text-2xl">
             <p data-testid="movie-title">{movieData.title}</p>
             <p>•</p>
             <p data-testid="movie-release-date">
@@ -69,58 +69,58 @@ const MovieDetails = () => {
             <p>•</p>
             <p data-testid="movie-runtime">{movieData.runtime}m</p>
           </div>
-          <div className="flex items-center gap-2.5">
-            <div className="rounded-[15px] py-1 px-4 text-[#B91C1C] border border-[#F8E7EB]">
+          <div className="mt-3 flex items-center gap-2.5">
+            <div className="rounded-[15px] py-0.5 md:py-1 px-2 md:px-4 text-[#B91C1C] border border-[#F8E7EB]">
               Action
             </div>
-            <div className="rounded-[15px] py-1 px-4 text-[#B91C1C] border border-[#F8E7EB]">
+            <div className="rounded-[15px] py-0.5 md:py-1 px-2 md:px-4 text-[#B91C1C] border border-[#F8E7EB]">
               Drama
             </div>
           </div>
         </div>
 
-        <div className="flex items-center gap-2">
-          <img src={Star} alt="Star Svg" />
-          <div className="flex items-center gap-2">
-            <p className="font-[500] text-2xl text-[#E8E8E8]">
+        <div className="mt-3 md:mt-0 flex items-center gap-2">
+          <img className="w-5 md:w-auto" src={Star} alt="Star Svg" />
+          <div className=" flex items-center gap-2">
+            <p className="font-[500] md:text-2xl text-[#E8E8E8]">
               {movieData.vote_average}
             </p>
-            <p className="font-[500] text-xl text-[#666]">|</p>
-            <p className="font-[500] text-xl text-[#666]">350k</p>
+            <p className="font-[500] md:text-xl text-[#666]">|</p>
+            <p className="font-[500] md:text-xl text-[#666]">350k</p>
           </div>
         </div>
       </div>
 
-      <div className="w-[775px]">
-        <p data-testid="movie-overview" className="mb-9  text-xl text-[#333]">
+      <div className="lg:w-[775px]">
+        <p data-testid="movie-overview" className="mb-9 lg:text-xl text-[#333]">
           {movieData.overview}
         </p>
-        <p className="text-[#333] text-xl">
+        <p className="text-[#333] md:text-xl">
           Director : <span className="text-[#BE123C]">Joseph Kosinski</span>
         </p>
-        <p className="my-8 text-[#333] text-xl">
+        <p className="my-8 text-[#333] md:text-xl">
           Writers :{" "}
           <span className="text-[#BE123C]">
             Jim Cash, Jack Epps Jr, Peter Craig
           </span>
         </p>
-        <p className="text-[#333] text-xl">
+        <p className="text-[#333] md:text-xl">
           Stars :{" "}
           <span className="text-[#BE123C]">
             Tom Cruise, Jennifer Connelly, Miles Teller
           </span>
         </p>
 
-        <div className="mt-[30px] relative h-[55px] w-max md:w-[775px] flex items-center">
-          <div className="absolute px-5 py-3 rounded-[10px] bg-[#BE123C] text-xl text-white">
+        <div className="mt-[30px] relative h-[55px] w-full md:w-[775px] flex items-center">
+          <div className="absolute px-2 md:px-5 py-3 rounded-[10px] bg-[#BE123C] md:text-xl text-white">
             Top rated movie #65
           </div>
           <img
             src={ExpandArrow}
             alt="Expand Arrow Svg"
-            className="absolute right-[26px]"
+            className="w-5 md:w-auto absolute right-2 md:right-[26px]"
           />
-          <div className="w-[775px] text-center text-xl  font-[500]  border border-[#C7C7C7] rounded-[10px] py-3">
+          <div className="w-full md:w-[775px] text-center md:text-xl font-[500]  border border-[#C7C7C7] rounded-[10px] py-3">
             Awards 9 nominations
           </div>
         </div>
