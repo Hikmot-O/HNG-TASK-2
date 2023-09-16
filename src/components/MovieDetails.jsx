@@ -50,7 +50,7 @@ const MovieDetails = () => {
         style={{
           background: `url(http://image.tmdb.org/t/p/w1280/${movieData.backdrop_path})`,
         }}
-        className="bg-cover mb-8 pt-[132px] bg-slate-300 flex flex-col items-center h-[450px] rounded-[20px]"
+        className="bg-cover mb-8 pt-[132px] bg-slate-500 flex flex-col items-center h-[450px] rounded-[20px]"
       >
         <div className="cursor-pointer flex items-center justify-center w-[110px] h-[110px] rounded-full bg-white bg-opacity-[0.35]">
           <img className="" src={playBtn} alt="Play Svg" />
