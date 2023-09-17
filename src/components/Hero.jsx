@@ -8,9 +8,10 @@ import tomato from "../assets/icons/tomato.png";
 import play from "../assets/icons/Play.svg";
 import Poster from "../assets/images/Poster.png";
 
-const API_Read_Access_Token = import.meta.env.VITE_API_Read_Access_Token;
-const API_Key = import.meta.env.VITE_API_KEY;
-
+// const API_Read_Access_Token = import.meta.env.VITE_API_Read_Access_Token;
+// const API_Key = import.meta.env.VITE_API_KEY;
+const API_Key='d621dfcc13fc45bdde4b0f2b76515c9d'
+const API_Read_Access_Token='eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkNjIxZGZjYzEzZmM0NWJkZGU0YjBmMmI3NjUxNWM5ZCIsInN1YiI6IjY1MDE1MTc1NmEyMjI3MDBmZDIwYjQ2MiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.YIc6T2B_Ft0u24gFaMgg0ZROW26qFJURr6Hh37VTlcY'
 const Hero = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [upcomingMovies, setUpcomingMovies] = useState([]);
