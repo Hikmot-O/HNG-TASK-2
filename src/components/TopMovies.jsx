@@ -15,7 +15,7 @@ const API_Read_Access_Token='eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkNjIxZGZjYzEzZmM0NW
 
 const TopMovies = () => {
   const [topTenMovies, setTopTenMovies] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const fetchTopMovies = async () => {
     const headers = {
       accept: "application/json",
@@ -40,9 +40,9 @@ const TopMovies = () => {
   };
 
   useEffect( () => {
-    setIsLoading(true);
-    fetchTopMovies();
+    // setIsLoading(true);
     setIsLoading(false);
+    fetchTopMovies();
   }, []);
 
   return (

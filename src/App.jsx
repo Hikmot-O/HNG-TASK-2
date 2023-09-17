@@ -1,18 +1,30 @@
-import Hero from "./components/Hero";
-import TopMovies from "./components/TopMovies";
-import MovieDetails from './components/MovieDetails'
-import HomePage from "./components/HomePage";
+import React, { Suspense } from "react";
+import "./App.css";
 import { Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
 
 function App() {
+
+  const MovieDetails = React.lazy(() => import('./components/MovieDetails'))
+  const HomePage = React.lazy(() => import('./components/HomePage'))
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />}></Route>
-      <Route path="/movies/:id" element={<MovieDetails />}></Route>
-      {/* <Route path="/top" element={<TopMovies />}></Route> */}
-      
-    </Routes>
+    // <>
+    <Suspense
+      fallback={
+        <div className="loading">
+          <div className="loader-container">
+            <div className="loader"></div>
+          </div>
+        </div>
+      }
+    >
+      <Routes>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/movies/:id" element={<MovieDetails />}></Route>
+        {/* <Route path="/top" element={<TopMovies />}></Route> */}
+      </Routes>
+    </Suspense>
+    // </>
   );
 }
 
